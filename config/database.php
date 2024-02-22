@@ -1,7 +1,7 @@
 <?php
 
 //credentials file
-require_once 'credentials.php'
+require_once 'credentials.php';
 
 // Class for connecting database
 class Database{
