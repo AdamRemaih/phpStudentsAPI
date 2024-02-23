@@ -22,7 +22,6 @@ class Database{
                 $this -> password
             );
             $this -> conn -> exec("set names utf8");
-            echo "Connection succesfull";
         }
         catch(PDOException $exception){
             echo "Connection error: ". $exception-> getMessage();

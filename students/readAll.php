@@ -15,7 +15,8 @@ $student = new Students($db);
 
 
 
-$stmt = $student->read();
+$stmt = $student->readAll();
+
 $num = $stmt->rowCount();
 
 
