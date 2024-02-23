@@ -1,7 +1,7 @@
 <?php
 
 //credentials file
-require_once 'credentials.php'
+require_once 'credentials.php';
 
 // Class for connecting database
 class Database{
@@ -22,7 +22,6 @@ class Database{
                 $this -> password
             );
             $this -> conn -> exec("set names utf8");
-            echo "Connection succesfull";
         }
         catch(PDOException $exception){
             echo "Connection error: ". $exception-> getMessage();
